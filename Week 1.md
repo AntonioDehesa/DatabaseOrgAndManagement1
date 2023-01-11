@@ -36,3 +36,17 @@ You can also specify: 0 to N, or 1 to N, or 0 to 1, etc.
 
 ### Crow´s foot Notation
 A more condensed, more graphically "pleasant" way to show the same ER model. 
+
+# Class
+When creating a Entity Relational Diagram, we have some elements. 
+
+## Entities
+
+We can identify them as Nouns: Chairs, buildings, children, etc. 
+
+### Descriptions
+The entities need descriptions, such as names, age, etc. 
+## Relationships
+
+These are mostly verbs: teaches, votes, does, etc. 
+Relationships require cardinality constraints. 
