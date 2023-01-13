@@ -65,4 +65,3 @@ Example: If a student is enrolled in every class.
 Let R = Project sid,cnum Grades
 let s = project cnum Grades
 Answer = R / S
-

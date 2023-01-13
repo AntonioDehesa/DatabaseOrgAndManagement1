@@ -53,3 +53,12 @@ and (r1.date = r2.date)
 and (r1.bid <> r2.bid);
 
 Find the names of sailors who have reserved two different boats on the same day. 
+
+# MySQL basics
+* --local_infile=1: allows MySQL to load local data files
+* show databases: as it appears to be. By default, we will always see databases information_schema, mysql, performance_schema, sys. There are just to keep the management system and statistics, which tables exist, and which indices. 
+* use <database>: With this, we select the database to query. 
+* show tables: once inside a database, we can use this to show the available tables
+* describe <table>: It will tell which attributes are in the table, their type, nullable or not, primary key, etc. 
+
+Once inside the table, we can actually run queries. 
