@@ -1,0 +1,27 @@
+Database of the games I possess, on which system (console, PC, etc), how many times I have played them, how much I enjoyed them, and the saga to which they belong. 
+
+Entities: 
+Games
+Consoles or Systems
+Sagas
+Enjoyment
+
+Relationships:
+Played times
+Owned On
+Part Of
+Availability
+
+Each game can belong to several consoles or systems, but each console or system can only have one copy of the same game. Therefore, N:1
+Each Saga can have more than one game, but one game can only belong to one saga. Therefore, N:1
+Each Console or System can possess several Sagas, and a Saga can belong to multiple systems. Therefore, N:N
+Each game can only have one record of enjoyment. Therefore, 1:1
+
+High-level interactions
+
+Returning a game: Returning a game if I did not enjoy it, would delete it from the Games table, 
+references to it in the Consoles or Systems table (affecting the Belong to a Console or System relationship), it would also affect the belongs to a Saga, 
+but it would remain in the Enjoyment table, as a reminder not to buy the game again, but the relationship would be deleted, as we no longer own it. 
+
+Buying a game: By buying a game, it must be registered in the Games table, a relationship should be created to the Belong to Saga, and Belongs to a Console or System
+But an entry to the enjoyment table should not be immediately added, as we can buy a game, without playing it for a long time. 
