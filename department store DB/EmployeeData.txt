@@ -1,0 +1,1 @@
+1,Aiman,32,1000.3,Colorado2,Sara,22,2000.4,California3,Luck,40,5000.9,New York4,Nader,55,700.3,New York5,Muhammad,40,2000.4,Origon6,Bilal,34,800.3,Nevada7,Omar,24,70098.3,Nevada8,Hailana,22,8009.0,Colorado

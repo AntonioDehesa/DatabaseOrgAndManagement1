@@ -1,0 +1,31 @@
+all values
+insert into games (Title, release_date, developer, classification, Genre)  values 
+("God of War", "2005-03-22", "Santa Monica Studio", "M", "Action-adventure, hack and slash"),
+("God of War II", "2007-03-13", "Santa Monica Studio", "M", "Action-adventure, hack and slash"),
+("God of War: Chains of Olympus", "2008-03-04", "Santa Monica Studio", "M", "Action-adventure, hack and slash"),
+("God of War III", "2010-03-16", "Santa Monica Studio", "M", "Action-adventure, hack and slash"),
+("God of War: Ghost of Sparta", "2010-11-02", "Ready at Dawn", "M", "Action-adventure, hack and slash"),
+("God of War: Ascension", "2013-03-12", "Santa Monica Studio", "M", "Action-adventure, hack and slash"),
+("God of War (2018)", "2018-04-20", "Santa Monica Studio", "M", "Action-adventure, hack and slash"),
+
+
+
+
+insert into game_system(sName, release_date, Company, sstatus, owned_copies)
+values ("PS One", "2000-06-07", "Sony", "Working", 2),
+("PlayStation 2", "2000-10-26", "Sony", "Working", 2),
+("PlayStation 3", "2006-11-11", "Sony", "Working", 1),
+("PlayStation 4", "2013-02-20", "Sony", "Working", 2),
+("PlayStation 5", "2020-11-12", "Sony", "Working", 1),
+("Wii", "2006-11-19", "Nintendo", "Working", 1)
+
+
+
+insert into ownedon(Title, sName)
+values ("God of War", "PlayStation 2"),
+("God of War II", "PlayStation 2"),
+("God of War III", "PlayStation 3"),
+("God of War: Chains of Olympus", "PlayStation 3"),
+("God of War: Ghost of Sparta", "PlayStation 3"),
+("God of War: Ascension", "PlayStation 3"),
+("God of War (2018)", "PlayStation 4")

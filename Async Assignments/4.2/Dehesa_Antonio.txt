@@ -1,0 +1,22 @@
+select * from sailors s where s.sid<10;
+sid	name	age	rating
+1	Bob1	55	9
+2	Bob2	27	6
+3	Bob3	97	1
+4	Bob4	34	2
+5	Bob5	94	8
+6	Bob6	24	10
+7	Bob7	68	5
+8	Bob8	36	5
+9	Bob9	22	7
+
+select count(*) from Boats ;
+
+count(*)
+8
+
+
+select count(*) from Reserve ;
+
+count(*)
+40

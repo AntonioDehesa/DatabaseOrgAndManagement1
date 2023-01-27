@@ -1,0 +1,32 @@
+ MySQL  localhost:3306 ssl  games  SQL > describe ownedon;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| Title | varchar(255) | NO   | PRI | NULL    |       |
+| sName | varchar(255) | NO   | MUL | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+2 rows in set (0.0010 sec)
+ MySQL  localhost:3306 ssl  games  SQL > describe played;
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| Title        | varchar(255) | NO   | PRI | NULL    |       |
+| played_times | int          | NO   |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+2 rows in set (0.0011 sec)
+ MySQL  localhost:3306 ssl  games  SQL > describe partof;
++-------+--------------+------+-----+---------+-------+
+| Field | Type         | Null | Key | Default | Extra |
++-------+--------------+------+-----+---------+-------+
+| Saga  | varchar(255) | NO   | MUL | NULL    |       |
+| Title | varchar(255) | NO   | PRI | NULL    |       |
++-------+--------------+------+-----+---------+-------+
+2 rows in set (0.0010 sec)
+ MySQL  localhost:3306 ssl  games  SQL > describe availability;
++------------+--------------+------+-----+---------+-------+
+| Field      | Type         | Null | Key | Default | Extra |
++------------+--------------+------+-----+---------+-------+
+| SystemName | varchar(255) | NO   | MUL | NULL    |       |
+| SagaName   | varchar(255) | NO   | PRI | NULL    |       |
++------------+--------------+------+-----+---------+-------+
+2 rows in set (0.0010 sec)
