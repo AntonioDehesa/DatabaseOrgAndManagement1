@@ -74,33 +74,33 @@ create table if not exists availability(
 # Loading data
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/Games' into table games
-fields terminated by ','
-lines terminated by '\r\n';
+fields terminated by '|'
+lines terminated by '\n';
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/Game_System' into table game_system
-fields terminated by ','
+fields terminated by '|'
 lines terminated by '\r\n';
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/Enjoyment' into table enjoyment
-fields terminated by ','
-lines terminated by '\r\n';
+fields terminated by '|'
+lines terminated by '\n';
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/Saga' into table saga
-fields terminated by ','
-lines terminated by '\r\n';
+fields terminated by '|'
+lines terminated by '\n';
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/OwnedOn' into table ownedon
-fields terminated by ','
-lines terminated by '\r\n';
+fields terminated by '|'
+lines terminated by '\n';
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/Played' into table played
-fields terminated by ','
-lines terminated by '\r\n';
+fields terminated by '|'
+lines terminated by '\n';
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/PartOf' into table partof
-fields terminated by ','
-lines terminated by '\r\n';
+fields terminated by '|'
+lines terminated by '\n';
 
 load data local infile '/Users/rino2/OneDrive/Documentos/Maestria/Second Quarter - Winter 2023/Database Organization and Management 1/DatabaseOrgAndManagement1/Assignment 4/Availability' into table availability
-fields terminated by ','
-lines terminated by '\r\n';
+fields terminated by '|'
+lines terminated by '\n';
