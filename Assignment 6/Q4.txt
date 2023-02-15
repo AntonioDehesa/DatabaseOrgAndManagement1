@@ -1,0 +1,12 @@
+#Q4: Find the name, salary, and EID of 49-year-old employees who work for a department located in Alaska (‘AK’) but live in California (‘CA’).
+select e.name, e.salary, e.eid from employee e join worksfor as wf on (wf.eid = e.eid) join department as d on (d.did = wf.did)
+where e.age = 49
+and
+d.statelocated = "AK"
+and e.residencestate = "CA";
+
++-----------+--------+------+
+| name      | salary | eid  |
++-----------+--------+------+
+| Sally4280 |  69137 | 4280 |
++-----------+--------+------+

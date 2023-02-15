@@ -1,0 +1,12 @@
+#Q9: Present the (name1, salary1, name2, salary2), where salary1 is the salary of the employee with name1 and salary2 corresponds with name2, 
+of all employee pairs where both are living in California (‘CA’), one is a 24-year-old manager, the other (who can be any age) is not a manager, 
+and the manager earns more than three times the other employee.
+
+with managers as (select m.eid as eid1, e.name as name1, e.salary as salary1, m.did from manages as m join employee as e on (m.eid = e.eid) where e.age = 24 and e.residencestate = "CA"),
+employees as (select e.eid as eid2, e.name as name2, e.salary as salary2, wf.did from employee as e join worksfor wf on (wf.eid = e.eid) where e.residencestate = "CA")
+select m.name1, m.salary1, e.name2, e.salary2 from managers as m join employees as e on (m.did = e.did)
+where m.salary1 > 3*e.salary2
+order by name1;
+
+
+Empty set (0.0025 sec)

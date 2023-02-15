@@ -1,0 +1,9 @@
+#Q6: Find the number of employees who are managers.
+select count(distinct eid) from manages;
+
++---------------------+
+| count(distinct eid) |
++---------------------+
+|                 485 |
++---------------------+
+1 row in set (0.0009 sec)

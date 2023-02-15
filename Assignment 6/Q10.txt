@@ -1,0 +1,19 @@
+#Q10: For each department in Alaska ('AK') that has 25 or more employees working for it and a supply budget < $7,000, 
+present the did, budget, and number of employees that work in that department.
+
+select d.did, d.supplybudget, count(distinct wf.eid) as num_employees from department as d join worksfor as wf on (d.did = wf.did)
+where d.supplybudget < 7000
+and
+d.statelocated = "AK"
+group by d.did
+having num_employees >= 25;
+
+
++-----+--------------+---------------+
+| did | supplybudget | num_employees |
++-----+--------------+---------------+
+|  42 |         6904 |            26 |
+| 254 |         5436 |            28 |
+| 365 |         5459 |            26 |
++-----+--------------+---------------+
+3 rows in set (0.0015 sec)

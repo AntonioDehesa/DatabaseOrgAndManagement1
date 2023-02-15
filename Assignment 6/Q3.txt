@@ -1,0 +1,15 @@
+#Q3: Find the names and salary of 25-year-old employees who work for departments located on the fourth floor in Alaska (‘AK’).
+select e.name, e.salary from employee e join worksfor as wf on (wf.eid = e.eid) join department as d on (d.did = wf.did)
+where e.age = 25
+and e.residencestate = "AK"
+and
+d.floor = 4;
+
++-----------+--------+
+| name      | salary |
++-----------+--------+
+| Sally1470 |  38399 |
+| Sally5607 |  43712 |
++-----------+--------+
+2 rows in set (0.0041 sec)
+

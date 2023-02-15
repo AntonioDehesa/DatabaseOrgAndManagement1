@@ -1,0 +1,11 @@
+#Q1: Find all information about managers who are 25 years old or younger and live in California (‘CA’).
+select * from manages as m join  employee as e on e.eid = m.eid
+where e.age <= 25
+and e.residencestate = "CA";
+
++------+-----+------------------+------+-----------+-----+--------+----------------+------------+
+| eid  | did | managesStartDate | eid  | name      | age | salary | residenceState | startDate  |
++------+-----+------------------+------+-----------+-----+--------+----------------+------------+
+| 2937 | 214 | 2017-01-06       | 2937 | Sally2937 |  22 |  65000 | CA             | 2017-04-05 |
+| 3172 | 132 | 2017-05-22       | 3172 | Sally3172 |  20 |  36475 | CA             | 2017-10-02 |
++------+-----+------------------+------+-----------+-----+--------+----------------+------------+

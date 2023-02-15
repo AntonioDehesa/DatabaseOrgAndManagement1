@@ -1,0 +1,19 @@
+#Q11: For each state, present the salary of the average 20-year-old manager (i.e., average salary of mangers who are 20 years old) who lives in that state 
+#and the number of such managers. Note: Your results can omit states that do not have any 20-year-old managers living in them.
+
+select e.residencestate, avg(e.salary) from manages as m join employee as e on (m.eid = e.eid)
+where e.age = 20
+group by e.residencestate;
+
++----------------+---------------+
+| residencestate | avg(e.salary) |
++----------------+---------------+
+| MD             |         56635 |
+| AK             |         62004 |
+| IL             |       52069.5 |
+| CA             |         36475 |
+| HI             |         45921 |
+| ME             |         50546 |
+| CT             |         62845 |
++----------------+---------------+
+7 rows in set (0.0019 sec)

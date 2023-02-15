@@ -1,0 +1,10 @@
+#Q5: Find the total number of employees.
+select count(distinct eid) from employee;
+
+
++---------------------+
+| count(distinct eid) |
++---------------------+
+|               10000 |
++---------------------+
+1 row in set (0.0108 sec)

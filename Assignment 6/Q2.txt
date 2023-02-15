@@ -1,0 +1,6 @@
+#Q2: Find the name, salary, age, and residence state of all 20-year-old or younger managers who live in Indiana (‘IN’).
+select e.name, e.salary, e.age, e.residencestate from manages as m join  employee as e on e.eid = m.eid
+where e.age <= 20
+and e.residencestate = "IN";
+
+Empty set (0.0014 sec)

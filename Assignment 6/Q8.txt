@@ -1,0 +1,27 @@
+#Q8: Find the (eid,number) pair for employees who are managing two or more departments where "number" is the number of departments they are managing.
+select m.eid, count(distinct m.did) as number_dep from manages m
+group by m.eid
+having number_dep >= 2
+order by number_dep desc;
+
+
++------+------------+
+| eid  | number_dep |
++------+------------+
+| 1085 |          2 |
+| 1230 |          2 |
+| 1822 |          2 |
+| 2093 |          2 |
+| 2447 |          2 |
+| 5164 |          2 |
+| 6244 |          2 |
+| 6379 |          2 |
+| 7025 |          2 |
+| 7096 |          2 |
+| 7283 |          2 |
+| 7925 |          2 |
+| 8601 |          2 |
+| 9077 |          2 |
+| 9226 |          2 |
++------+------------+
+15 rows in set (0.0012 sec)

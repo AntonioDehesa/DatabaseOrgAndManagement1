@@ -1,0 +1,10 @@
+#Q7: Find the number of employees who are not managers.
+select count(distinct e.eid) from employee e
+where e.eid not in (select m.eid from manages m);
+
++-----------------------+
+| count(distinct e.eid) |
++-----------------------+
+|                  9515 |
++-----------------------+
+1 row in set (0.0060 sec)
