@@ -1,0 +1,1 @@
+db.people.aggregate([ {$match: {birth: {$gt: 1980}}},{$group: {_id: "$state",avgSalary:{$avg: "$salary"}}}, {$sort: {_id: 1}}])
